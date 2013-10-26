@@ -1,3 +1,4 @@
 # English strings go here for Rails i18n
 en:
-  # my_label: "My label"
+  help_redirect_label_project_identifier: "Help Project Identifier"
+  help_redirect_label_wiki: "Help Wiki Page"

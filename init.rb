@@ -1,4 +1,7 @@
 Redmine::Plugin.register :redmine_redirect_help do
+  
+  settings :default => {'help_project' => '', 'help_wiki_page' => ''}, :partial => 'settings/redirect_help_settings'
+  
   name 'Redmine Redirect Help plugin'
   author 'David Anderson'
   description 'Redirects the help link at the top of the page to a wiki page'

@@ -1,0 +1,11 @@
+<div class="box tabular">
+  <p>
+    <%= label_tag 'settings[help_project]', l(:help_redirect_label_project_identifier) %>
+    <%= select_tag("settings[help_project]", project_tree_options_for_select(Project.all, :selected => Project.where(:id => @settings[:help_project]).first)) %>
+  </p>
+  <p>
+    <%= label_tag 'settings[help_wiki_page]', l(:help_redirect_label_wiki) %>
+    <%= text_field_tag 'settings[help_wiki_page]', @settings[:help_wiki_page], {:size => 23} %>
+  </p>
+</div>
+
