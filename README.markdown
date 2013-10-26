@@ -7,14 +7,23 @@ global site.  In some cases, a user may wish to create a customized help
 resource tailored to their specific redmine configuration/usage.  This plugin
 will redirect the help link to a specified wiki page in the redmine database.
 
-The help page will not be drawn as part of a gven project in order to prevent 
-users from accidently logging issues to the help project.
+## Usage
+
+Set the project and wiki page in the plugin settings.
+
+Click on the help link at the top of the page or visit '/guide' from the base
+url to access the wiki guide page.  The help page will not be drawn as part of 
+a given project in order to prevent users from accidently logging issues to the 
+help project.
+
+The guide will be available to all visitors without a specifically required 
+permission.  It will require login if the Authentication required option is
+selected.
 
 ## Compatibility
 
 This plugin is developed and tested on version 2.3.3, it may or may not work 
-with other versions.  Because it overrides at least one view, future Redmine 
-versions are likely to break compatibility and should be verified.
+with other versions.
 
 ## Installation
 
