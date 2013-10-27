@@ -1,9 +1,11 @@
+require_dependency 'redirect_help_application_helper_patch'
+
 Redmine::Plugin.register :redmine_redirect_help do
   
   settings :default => {'help_project' => '', 'help_wiki_page' => ''}, :partial => 'settings/redirect_help_settings'
   
   delete_menu_item :top_menu, :help  
-  menu :top_menu, :help, { :controller => 'help', :action => 'show' }, :last => true
+  menu :top_menu, :help, { :controller => 'help', :action => 'index' }, :last => true
   
   name 'Redmine Redirect Help plugin'
   author 'David Anderson'
